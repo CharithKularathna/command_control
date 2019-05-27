@@ -1,0 +1,213 @@
+.icon-bar {
+    width: 100%;
+    background-color: #555; 
+    overflow: auto;
+  }
+  
+  .icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; 
+    width: 25%; /* For 4 icons. 25% x 4 = 100% */
+    padding: 12px 0;
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* Text color */
+    font-size: 36px;
+    text-decoration: none; /* Removes default underline for links */
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000; /* Hover color for icons */
+  }
+  
+  .active {
+    background-color: yellowgreen; /*Activecolor */
+  }
+
+.hello {
+    width: 100%;
+    text-align: center;
+    color: #555;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ /* The side navigation menu */
+ .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 8px; /* Stay at the top */
+    right: 0;
+    background-color: #555; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #AAAAAA;
+    display: block;
+    transition: 0.3s;
+    
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } 
+
+  #userpic {
+      width: 150px;
+      height: 150px;
+      margin-left: 75px;
+  }
+
+  #username {
+      margin-bottom: 50px;
+      text-align: center;
+      font-size: 25px;
+      color: #AAAAAA;
+      display: block;
+  }
+
+
+  
+   /* Container needed to position the button. Adjust the width as needed */
+   .dash-container .dash-column {
+     width: 40%;
+     position: relative;
+     float: left;
+   }
+
+   .dash-column {
+  position: relative;
+  height: 80%;
+  margin-left: 7%;
+  margin-top: 2%;
+  border: #555;
+  border-style: hidden;
+  border-radius: 10px;
+  border-width: 2px;
+  background-color: #eeeeee;
+  opacity: 0.7;
+}
+
+/* Make the image responsive */
+.dash-column img {
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  margin-top: 5%;
+  transition: all 0.3s ease;
+}
+
+#booking-column img {
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  margin-top: 20%;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.dash-column .column-button {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: yellowgreen;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+#booking-column .column-button {
+  background-color: #555;
+
+}
+
+#seat-column .column-button {
+  background-color: #555;
+
+}
+
+.dash-column .column-button:hover {
+  background-color: black;
+} 
+
+
+
+
+.dash-column:hover{
+  opacity: 1;
+}
+
+/* Balance Page */
+.balance-div {
+  border: 5px solid #bbb; /* Dotted border */
+  width: 80%;
+  border-radius: 15px; /* Rounded border */
+  margin: 0 auto; /* Center the coupon */
+  margin-top: 10px;
+  max-width: 600px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+}
+
+.balance-div-main {
+  padding: 2px 16px;
+  background-color: #f1f1f1;
+}
+
+.balance-div-main h2,h3{
+  text-align: center;
+}
+
+.balance-div-details {
+  background: #ccc;
+  padding: 3px;
+}
+
+.balance-div img{
+  height: 300px;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 5%;
+  
+}
+
+
+body {
+  color: white;
+}
