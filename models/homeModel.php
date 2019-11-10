@@ -14,7 +14,6 @@ class HomeModel extends Model{
     //Methods for HomeModel Object
 
     public function index(){
-        
         return;    
     }
 
