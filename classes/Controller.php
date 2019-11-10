@@ -1,4 +1,5 @@
 <?php
+//Bridge Pattern : Controller acts as a bridge between Models and Views. 
 abstract class Controller{
     protected $request;
     protected $action;

@@ -25,11 +25,29 @@ class BusOwner extends Controller{
         new busOwnerSideNav();
         new balanceDiv($viewmodel->balanceRes);
     }
+
     protected function deposit(){
         $viewmodel = BusOwnerModel::getModelInstance();
         $this->returnView($viewmodel->deposit(),false);
         new dashTopNav();
         new busOwnerSideNav();
     }
+
+    protected function registerbus(){
+        $viewmodel = BusOwnerModel::getModelInstance();
+        $this->returnView($viewmodel->registerbus(),false);
+        new dashTopNav();
+        new busOwnerSideNav();
+        new busRegForm();
+    }
+
+    protected function registerbustwo(){
+        $viewmodel = BusOwnerModel::getModelInstance();
+        $this->returnView($viewmodel->registerbustwo(),false);
+        new dashTopNav();
+        new busOwnerSideNav();
+        new busRegFormTwo();
+    }
+
 }
 ?>

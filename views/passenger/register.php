@@ -38,12 +38,15 @@
     </label>
     <label class="formNames">
     <h5>NIC Number</h5>
-    <input type="text" name="nic" placeholder="Enter NIC No." required>
+    <div id="nic-comment"></div>
+    <input type="text" name="nic" id="nic-text" placeholder="Enter NIC No." required>
     </label>
     <label class="formNames">
     <h5>Contact Number</h5>
-    <input type="text" name="contact" placeholder="Enter Contact No." required>
+    <div id="cn-comment"></div>
+    <input type="text" name="contact" id="cn-text" placeholder="Enter Contact No." required>
     </label>
+
     <input type="checkbox" required id="agree">
     <label>I agree to the terms and conditions of TransMax (Pvt) Ltd.</label>
     <br>

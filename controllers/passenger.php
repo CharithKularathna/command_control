@@ -29,6 +29,23 @@ class Passenger extends Controller{
         new depositForm();
     }
 
+    protected function bookseat(){
+        $viewmodel = PassengerModel::getModelInstance();
+        $this->returnView($viewmodel->bookseat(),false);
+        new dashTopNav();
+        new passengerSideNav();
+        new bookSeatForm();
+        new resultBar($viewmodel);
+
+    }
+    protected function bookseatfinal(){
+        $viewmodel = PassengerModel::getModelInstance();
+        $this->returnView($viewmodel->bookseatfinal(),false);
+        //new dashTopNav();
+        //new passengerSideNav();
+        
+    }
+
 
 
     

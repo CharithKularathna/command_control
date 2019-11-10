@@ -7,6 +7,7 @@
 
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="<?php echo ROOT_URL; ?>busowner/balance">Check Balance</a>
+  <a href="<?php echo ROOT_URL; ?>busowner/registerbus">Register a Bus</a>
   <a href="#">Preferences</a>
   <a href="#">Help</a>
 </div>

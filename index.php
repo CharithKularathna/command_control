@@ -15,6 +15,10 @@ require('classes/sub/checkBookingsDiv.php');
 require('classes/sub/seatBookingsDiv.php');
 require('classes/sub/balanceDiv.php');
 require('classes/sub/depositForm.php');
+require('classes/sub/busRegForm.php');
+require('classes/sub/busRegFormTwo.php');
+require('classes/sub/bookSeatForm.php');
+require('classes/sub/resultBar.php');
 
 require('controllers/home.php');
 require('controllers/passenger.php');
