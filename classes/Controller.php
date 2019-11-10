@@ -16,7 +16,7 @@ abstract class Controller{
     protected function returnView($viewmodel,$fullview){
         $view = 'https://transmax-bus.herokuapp.com/views/'.get_class($this).'/'.$this->action.'.php';
         if($fullview){
-            require('views/main.php');
+            require('https://transmax-bus.herokuapp.com/views/main.php');
         }else{
             require($view);
         }
