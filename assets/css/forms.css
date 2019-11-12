@@ -74,7 +74,7 @@ body{
     margin-left: 4px;
 }
 
-#password-comment1, #conpassword-comment, #cn-comment, #nic-comment{
+#password-comment1, #conpassword-comment{
     color: red;
     font-style: italic;
     margin-left: 4px;

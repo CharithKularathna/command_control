@@ -4,11 +4,11 @@ class Passenger extends Controller{
     protected function register(){
         //Redirect to Model
         $viewmodel = PassengerModel::getModelInstance();
-        $this->returnView($viewmodel->register(),true);    
+        $this->returnView($viewmodel->register(),false);    
     }
     protected function signIn(){
         $viewmodel = PassengerModel::getModelInstance();
-        $this->returnView($viewmodel->signIn(),true);
+        $this->returnView($viewmodel->signIn(),false);
     }
     protected function dashboard(){
         $viewmodel = PassengerModel::getModelInstance();
@@ -43,7 +43,6 @@ class Passenger extends Controller{
         $this->returnView($viewmodel->bookseatfinal(),false);
         //new dashTopNav();
         //new passengerSideNav();
-        
     }
 
 

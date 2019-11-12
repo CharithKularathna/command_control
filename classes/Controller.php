@@ -1,5 +1,4 @@
 <?php
-//Bridge Pattern : Controller acts as a bridge between Models and Views. 
 abstract class Controller{
     protected $request;
     protected $action;
@@ -14,9 +13,9 @@ abstract class Controller{
     }
 
     protected function returnView($viewmodel,$fullview){
-        $view = 'https://transmax-bus.herokuapp.com/views/'.get_class($this).'/'.$this->action.'.php';
+        $view = 'views/'.get_class($this).'/'.$this->action.'.php';
         if($fullview){
-            require('https://transmax-bus.herokuapp.com/views/main.php');
+            require('views/main.php');
         }else{
             require($view);
         }

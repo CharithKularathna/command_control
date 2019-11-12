@@ -7,7 +7,7 @@ define("DB_PASSWORD","123456");
 define("DB_NAME","bus");
 
 //URLs
-define("ROOT_PATH", "");
-define("ROOT_URL","https://transmax-bus.herokuapp.com/");
+define("ROOT_PATH", "/transmax.net");
+define("ROOT_URL","http://localhost/transmax.net/");
 
 

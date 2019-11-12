@@ -45,48 +45,5 @@ let passwordConfirmChecker = function (){
     })
 }
 
-let cnChecker = function (){
-
-    let condivi = document.querySelector("#cn-text");
-    condivi.addEventListener("change",function(text){
-        let cn = text.target.value;
-        if(text.target.value.length<9 || text.target.value.length>10){
-            document.querySelector("#cn-comment").innerHTML="";
-            const comment = document.createElement('p');
-            comment.textContent="Invalid Contact Number";
-            document.querySelector("#cn-comment").appendChild(comment);
-            
-        }
-        else{
-            document.querySelector("#cn-comment").innerHTML="";
-
-        }
-        
-    })
-}
-
-let nicChecker = function (){
-
-    let condivi = document.querySelector("#nic-text");
-    condivi.addEventListener("change",function(text){
-        let cn = text.target.value;
-        if(text.target.value.length != 10 || !(text.target.value.endsWith("V"))){
-            document.querySelector("#nic-comment").innerHTML="";
-            const comment = document.createElement('p');
-            comment.textContent="Invalid NIC Number";
-            document.querySelector("#nic-comment").appendChild(comment);
-            
-        }
-        else{
-            document.querySelector("#nic-comment").innerHTML="";
-
-        }
-        
-    })
-}
-
 passwordCommenter();
 passwordConfirmChecker();
-cnChecker();
-nicChecker();
-

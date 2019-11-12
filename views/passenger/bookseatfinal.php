@@ -1,34 +1,50 @@
-<html lang="en">
-<title>TransMax Offical</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="http://localhost/transmax.net/assets/css/forms.css">
-
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-</style>
-<body>
-
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-light-grey w3-card w3-left-align w3-large" >
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="<?php echo ROOT_URL; ?>" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="http://localhost/transmax.net/assets/html/time.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Bus Schedule</a>
-    
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
-    
+<div>
+  <form class="form" method="post" action="<?php $_SERVER['PHP_SELF'];?>">
+    <h2 id="signintitle">Reserve your Seat</h2>
     <?php
-      if (isset($_SESSION['is_logged_in'])) : //Use colon here. Later on use endif
+      Messages::display();
     ?>
-      <a href='<?php echo ROOT_URL; ?>home/logout' class='w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white'>Logout</a>  
-    <?php
-      endif; ?>
-     
-  </div>
+    <hr>
+    <label class="formNames">
+      <h5>First Name</h5>
+    <input type="text" name="fname" placeholder="Enter First Name" required>
+    </label>
+    <label class="formNames">
+    <h5>Last Name</h5>
+    <input type="text" name="lname" placeholder="Enter Last Name" required>
+    </label>
+    <label class="formNames">
+    <h5>Address</h5>
+    <input type="text" name="address" placeholder="Enter Address" required>
+    </label>
+    <label class="formNames">
+    <h5>E-mail</h5>
+    <input type="email" name="email" placeholder="Enter Email" required>
+    </label>
+    <label class="formNames">
+    <h5>Password</h5>
+    <div id="password-comment1"></div>
+    <div id="password-comment2"></div>
+
+    <input type="password" name="password" id="password-text" placeholder="Enter Password" required>
+    </label>
+    <label class="formNames">
+    <h5>Confirm Password</h5>
+    
+    <div id="conpassword-comment"></div>
+    <input type="password" name="conpassword" id="conpassword-text" placeholder="Enter Password" required>
+    </label>
+    <label class="formNames">
+    <h5>NIC Number</h5>
+    <input type="text" name="nic" placeholder="Enter NIC No." required>
+    </label>
+    <label class="formNames">
+    <h5>Contact Number</h5>
+    <input type="text" name="contact" placeholder="Enter Contact No." required>
+    </label>
+    <input type="checkbox" required id="agree">
+    <label>I agree to the terms and conditions of TransMax (Pvt) Ltd.</label>
+    <br>
+    <br>
+    <input type="submit" name='submit' class="submit-button" value="Submit" style="margin-left:280px;">
+  </form>

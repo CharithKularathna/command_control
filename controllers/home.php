@@ -11,7 +11,7 @@ class Home extends Controller{
         }
         else{
             $viewmodel = HomeModel::getModelInstance();
-            $this->returnView($viewmodel->Index(),false);
+            $this->returnView($viewmodel->Index(),true);
 
         }
         

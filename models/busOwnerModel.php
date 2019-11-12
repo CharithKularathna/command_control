@@ -159,7 +159,6 @@ class BusOwnerModel extends Model{
         }
     }
 
-    //Facade Design Pattern
     private function firstBusEntry(){
         if($_COOKIE['bustype']=='50'){
             $post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);

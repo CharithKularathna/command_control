@@ -30,13 +30,11 @@
             }
         }
 
-        //Template Design Pattern
-        final public function query($query){
+        public function query($query){
             $this->statement = $this->dbh->prepare($query);
         }
 
-
-        final public function bind($param,$value,$type = null){
+        public function bind($param,$value,$type = null){
             if(is_null($type)){
                 switch(true){
                     case is_int($value):
@@ -53,18 +51,19 @@
                 }
             }
             $this->statement->bindValue($param,$value,$type);
+            print_r($this->statement);
         }
 
-        final public function execute(){
+        public function execute(){
             return $this->statement->execute();
         }
 
-        final public function resultSet(){
+        public function resultSet(){
             $this->execute();
             return $this->statement->fetchAll(PDO::FETCH_ASSOC);
         }
 
-        final public function lastInsertId(){
+        public function lastInsertId(){
             return $this->dbh->lastInsertId();
         }
 
