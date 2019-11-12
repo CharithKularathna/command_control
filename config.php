@@ -8,6 +8,6 @@ define("DB_NAME","bus");
 
 //URLs
 define("ROOT_PATH", "");
-define("ROOT_URL","https://transmax-bus.herokuapp.com/");
+define("ROOT_URL","/");
 
 
